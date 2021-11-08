@@ -1,0 +1,446 @@
+
+. align-items-center{
+    align-items: center;
+}
+.header{
+
+    padding:2px;
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navlogo{
+    max-width: 1140px;
+    margin: 15px;
+}
+.hamburger-btn{
+    
+    width: 40px;
+    height: 40px;
+    
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: var(--outer-shadow);
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+.hamburger-btn:hover{
+    box-shadow: var(--outer-shadow-0);
+}
+:root{
+    --bg-black-900:#000000;
+    --bg-black-50: #eaebec;
+    --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+    --outer-shadow-0: 0 0 0 #d0d0d0,0 0 0 #f8f8f8;
+    --inner-shadow:inset 3px 3px 3px #cfcdcd,inset -3px -3px 3px #ece9e9;
+}
+.hamburger-btn span{
+    display: block;
+    width: 16px;
+    height: 3px;
+    position: relative;
+    background-color:var(--bg-black-900);
+}
+
+.hamburger-btn span:before,
+.hamburger-btn span:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-black-900);
+}
+.hamburger-btn span:before
+{
+    top: -6px;
+
+}
+.hamburger-btn span:after{
+    top: 6px;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.nav-menu{
+    position: fixed;
+    background-color: var(--bg-black-50);
+    padding: 0 15px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    
+}
+.nav-menu-inner{
+
+    min-height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-menu.close-nav-menu{
+    height: 40px;
+    width: 40px;
+    display: block;
+font-size: 35px;
+border-radius: 50%;
+position: absolute;
+right: 15px;
+top: 15px;
+cursor: pointer;
+text-align: center;
+transition: all 0.3 ease;
+color: --text-black-600;
+}
+.nav-menu.close-nav-menu:after
+{
+    border-radius: 50%;
+}
+.nav-menu ul{
+   
+    padding: 15px;
+}
+
+ul li:last-child{
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.nav-menu ul li{
+    display: block;
+    margin-bottom: 20px;
+}
+.nav-menu ul li a{
+    display: inline-block;
+    font-size: 20px;
+    
+    border-radius: 30px;
+    background-color: rgb(245, 243, 243);
+    padding: 5px 30px;
+    font-weight: 700;
+    border: solid rgba(255, 255, 255, 0.952);
+    color: var(--text-black-700);
+    text-transform: capitalize;
+    transition: all 0.3 ease;
+    box-shadow: var(--inner-shadow);
+}
+.nav-menu ul li a:after
+{
+    border-radius: 30px;
+}
+.nav-menu ul li a:hover{
+    background-color: rgb(197, 196, 196);
+}
+.home-section .full-screen{
+position: relative;
+padding: 50px 0;
+min-height: 100vh;
+align-items: center;
+
+}
+.home-section.home-text,
+.home-section.home-img{
+    flex: 0 0 50%;
+  
+    padding: 0 15pxs;
+
+
+}
+.home-section .home-text{
+
+padding: 230px;
+}
+.btn-1{
+padding: 10px 15px;
+color: rgb(247, 131, 150);
+background-color: transparent;
+display:inline-block;
+width: 110px;
+
+cursor: pointer;
+border-radius: 30px;
+text-transform: capitalize;
+
+}
+.btn-1:hover{
+    box-shadow: var(--bg-black-50);
+}
+
+.home-section .home-text p{
+font-size: 18px;
+color: var(--text-black-900);
+margin: 0;
+text-transform: capitalize;
+}
+.home-section .home-text h1{
+font-size: 20px;
+color: var(--bg-black-900);
+font-weight:500;
+margin: 2px;
+}
+.home-section .home-text h2{
+font-size: 40px;
+color: var(--bg-black-900);
+font-weight:700;
+margin: 0;
+}
+.home-section .home-text .btn-1{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.home-section .home-img .img-box
+{
+
+padding: 10px;
+max-width: 330px;
+display: block;
+margin: auto;
+border-radius: 50%;
+align-items: center;
+}
+.home-section .home-img .img-box img{
+width: 100%;
+  align-items: center;
+    border-radius: 50%;
+    border: 10px solid transparent;
+}
+.inner-shadow{
+    box-shadow: var(--inner-shadow);
+}
+.about-section{
+   min-height: 100vh;
+   padding: 80px 0 80px;
+}
+.main-title{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 2px;
+    flex: 0 0 100%;
+    text-align: center;
+    color: var(--bg-black-900);
+}
+.about-section .about-img{
+
+display: inline-block;
+position:relative;
+left: 100px;
+padding: 10px;
+max-width:320px;
+}
+.about-section .main-title p{
+    color: rgb(224, 122, 139);
+    font-size: 20px;
+    font-weight: 500;
+}
+.about-section .about-info{
+    position: relative;
+    left: 150px;
+    max-width: 900px;
+}
+.about-section .about-info a{
+    display: inline-block;
+    padding: 10px 15px;
+box-shadow: var(--inner-shadow);
+    border-radius: 30px;
+
+}
+.about-info a{
+    color: rgb(218, 136, 150);
+    margin: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration-line: none;
+}
+.about-info a:hover{
+    box-shadow: var(--bg-black-50);
+}
+.social-links{
+    flex: 0 0 100%;
+    padding: 10px;
+    text-align: center;
+}
+.about-section .social-links a{
+    padding: 6px;
+    font-size: 16px;
+    box-shadow: var(--inner-shadow);
+    margin: 5px;
+    border-radius: 30px;  
+    color: var(--text-black-600);
+    line-height: 40px;
+    transition: all 0.3s ease;
+
+}
+.about-section .social-links a:hover{
+    box-shadow: var(--bg-black-50);
+    color: rgb(243, 135, 153);
+}
+.about-tabs{
+  
+    flex: 0 0 100%;
+   
+    text-align: center;
+    font-size: 20px;
+   
+}
+.about-section .about-tabs a{
+  
+
+    padding: 10px;
+    margin: 7px;
+    border-radius: 30px;
+ text-transform: capitalize ;
+ text-decoration-line: none;
+ color: var(--bg-black-900);
+}
+.about-section .about-tabs a:hover:not(.active){
+   opacity: 0.6;
+}
+.about-section .about-tabs .active{
+    color: rgb(196, 113, 127);
+    box-shadow: var(--inner-shadow);
+    padding: 10px;
+    margin: 7px;
+    border-radius: 30px;
+}
+.about-section .tab-content{
+   
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    left: 10%;
+    
+
+}
+
+.about-section .skills .skill-items {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+}
+.about-section .skills .skill-items p{
+    columns: var(--bg-black-900);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+
+}
+.about-section .skills .skill-items .progress {
+    border-radius: 30px;
+    height: 20px;
+    position:relative;
+}
+.about-section .skills .skill-items .progress-bar{
+    background-color: var(--bg-black-900);
+    height: 6px;
+    position: relative;
+    top: 7px;
+    left: 7px;  
+   
+}
+.about-section .skills .skill-items .btn-4{
+    width: 70%;
+}
+.about-section .skills .skill-items .btn-5{
+    width: 40%;
+}
+.about-section .skills .skill-items .btn-6{
+    width: 50%;
+}
+.about-section .skills .skill-items .btn-7{
+    width: 40%;
+}
+.about-section .skills .skill-items .progress-bar span{
+    position: relative;
+    left: 100%;
+    top: -6px;
+}
+
+
+.about-section .education-section {
+    display: inline-block;
+   box-shadow: var(--inner-shadow);
+   border-radius: 30px;
+   position: relative;
+   top: 10px;
+   left: 20px;
+   padding: 20px;
+   margin: 20px;
+   
+}
+.about-section .education-section .education-tab p {
+    text-align: center;
+    color: rgb(216, 94, 114);
+    font-weight: 600;
+    font-size: 17px;
+    
+}
+.about-section .education-section .education-tab h2{
+    color: var(--bg-black-900);
+    font-size: 20px;
+}
+.about-section .education-section .education-tab .tab-1 p{
+    font-size: 22px;
+    color: var(--bg-black-900);
+    font-weight:500;
+}
+.about-section .experience{
+    display: inline-block; 
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+    top: 5px;
+    box-shadow: var(--inner-shadow);
+    border-radius: 30px;
+    max-width: 50%;
+    
+}
+
+.about-section .timeline-item span{
+    color: rgb(214, 115, 131);
+}
+
+.about-section .timeline-item h4{
+    color: var(--bg-black-900);
+    font-size: 20px;
+}
+.about-section .timeline-item p{
+    
+   
+    color: var(--bg-black-900);
+}
+.about-section .education{
+    display: inline-block; 
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+    top: 5px;
+    box-shadow: var(--inner-shadow);
+    border-radius: 30px;
+    max-width: 50%;
+    
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire-met</title>
+    <style>
+          :root{
+    --bg-black-900:#000000;
+    --bg-black-50: #eaebec;
+    --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+    --outer-shadow-0: 0 0 0 #d0d0d0,0 0 0 #f8f8f8;
+    --inner-shadow:inset 3px 3px 3px #cfcdcd,inset -3px -3px 3px #ece9e9;
+}
+        .contact-section .section-title h2,
+        .contact-section .section-title  p{
+    
+            flex: 0 0 100%;
+            text-align: center;
+        }
+        .contact-section .section-title .main-title {
+            color: rgb(223, 164, 174);
+        }
+        .contact-section .section-title h2{
+            color: var(--bg-black-900);
+        }
+        .contact-section .section-title{
+            flex: 0 0 100%;
+    text-align: center;
+        }
+        .contact-section .section-title .info{
+    display: inline-block; 
+    padding: 40px;
+    margin: 10px;
+    position: relative;
+    top: 50px;
+    box-shadow: var(--inner-shadow);
+   
+    max-width: 50%;
+   color: var(--bg-black-900);
+        }
+    .contact-form{
+        position: relative;
+        top: 60px;
+        left: 180px;
+    }    
+    .input-control{
+        margin: 10px;
+        padding: 12px;
+        box-shadow: var(--inner-shadow);
+        border-radius: 30px;
+        border: white;
+        width: 50%;
+    }
+    button{
+        padding: 10px;
+        align-items:right;
+        box-shadow: var(--inner-shadow);
+        color: rgb(241, 170, 182);
+        
+        font-size: 17px;
+        border-radius: 30px;
+        border: white;
+        background-color: white;
+
+    }
+    button:hover{
+        box-shadow: var(--bg-black-50);
+       
+    }
+    </style>
+</head>
+<body>
+    <section class="contact-section section">
+        <div class="container">
+            <div class="row">
+                <div class="section-title ">
+                    <p class="main-title">Contact</p>
+                    <h2 data-heading="Contact">Get In Touch</h2>
+                    <div class="info">
+                    <div class="phone-no">
+                        <h3>Phone</h3>
+                        <p>7879564218</p>
+                        </div>
+                    </div>
+                    <div class="info">
+                    <div class="Email-Id">
+                        <h3>Email</h3>
+                        <p>nancysuman123@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info">
+                    <div class="Address">
+                        <h3>Address</h3>
+                        <p>ward no. 16 Urkura PO-Birgaon 493221 Raipur C.G.</p>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="row">
+                    <div class="contact-form">
+                      <form>
+                          <div class="row">
+                              <div class="w-50">
+                               <div class="input-group outer-shadow hover-in-shadow">
+                                   <input type="text" placeholder="Name" class="input-control">
+                               </div>
+                               <div class="input-group outer-shadow hover-in-shadow">
+                                <input type="email" placeholder="Email" class="input-control">
+                            </div>
+                            <div class="input-group outer-shadow hover-in-shadow">
+                                <input type="text" placeholder="Subject" class="input-control">
+                            </div>
+                              </div>
+                              <div class="w-50">
+                              <div class="input-group outer-shadow hover-in-shadow">
+                                  <textarea class="input-control" placeholder="Message"></textarea>
+                              </div>
+                              </div>
+
+                          </div>
+                      </form>  
+<button type="submit">Send Message</button>
+                 </div>   
+                  </div>
+                </div>               
+                
+            </div>  
+        </div>
+    </section>
+    
+</body>
+</html>
